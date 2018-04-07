@@ -1,0 +1,50 @@
+<html>
+<head>
+  <style>
+  body{
+    background: #ffffff;
+  }
+  </style>
+<body>
+<center>
+  <h1>calculator</h1><br>
+  <input id="a"></input>
+  <input id="b"></input>
+  <button onclick="add()">Add</button>
+  <button onclick="subtract()">subtract</button>
+  <button onclick="product()">product</button>
+  <button onclick="division()">division</button>
+  <button onclick="power()">a power b</button>
+  <div id="ans"></div>
+</center>
+
+<script type="text/javascript">
+  function add(){
+    var a=parseInt(document.getElementById("a").value);
+    var b=parseInt(document.getElementById("b").value);
+    document.getElementById("ans").innerHTML=a+b;
+  }
+  function subtract(){
+    var a=parseInt(document.getElementById("a").value);
+    var b=parseInt(document.getElementById("b").value);
+    document.getElementById("ans").innerHTML=a-b;
+  }
+  function product(){
+    var a=parseInt(document.getElementById("a").value);
+    var b=parseInt(document.getElementById("b").value);
+    document.getElementById("ans").innerHTML=a*b;
+  }
+  function division(){
+    var a=parseInt(document.getElementById("a").value);
+    var b=parseInt(document.getElementById("b").value);
+    document.getElementById("ans").innerHTML=a/b;
+  }
+  function power(){
+    var a=parseInt(document.getElementById("a").value);
+    var b=parseInt(document.getElementById("b").value);
+    document.getElementById("ans").innerHTML=Math.pow(a,b);
+  }
+
+</script>
+</body>
+</html>
